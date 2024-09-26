@@ -9,9 +9,7 @@ from win32con import *
 from win32gui import * 
 from sys import exit 
 
-time.sleep(2)
-
-warningtitle = 'Program crashed - RuntimeBroker.exe'
+warningtitle = 'RuntimeBroker.exe - error message'
 warningdescription = 'The instruction at 0x00007FF950FCBE4B reference memory at 0x000000000000024, The memory could not written.           Would you like to restart?'
 
 if MessageBox(warningdescription, warningtitle, MB_ICONWARNING | MB_YESNO) == 7: 
